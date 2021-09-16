@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "graceful-fs": "^4.2.2",
-    "serverless": "^1.60.4"
+    "serverless": "^2.0.0"
   },
   "devDependencies": {
     "husky": "^3.1.0",
