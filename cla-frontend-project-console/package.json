@@ -5,14 +5,18 @@
   "scripts": {
     "deploy": "../scripts/deploy-frontend.sh",
     "sls": "../node_modules/serverless/bin/serverless",
-    "install-frontend": "../scripts/install-frontend.sh"
+    "install-frontend": "../scripts/install-frontend.sh",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "ionic": "^3.20.0",
+    "ionic": "^4.0.0",
     "graceful-fs": "^4.2.2",
     "serverless-finch": "^2.3.2",
     "serverless-cloudfront-invalidate": "^1.2.1",
     "serverless-pseudo-parameters": "^2.5.0",
-    "serverless-plugin-tracing": "^2.0.0"
-  }
+    "serverless-plugin-tracing": "^2.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
